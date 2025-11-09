@@ -147,7 +147,7 @@ export default function KontaktPage() {
                   <Mail className="h-5 w-5 text-[#00674f]" />
                   <div>
                     <p className="font-medium">E-Mail</p>
-                    <p className="text-gray-600">kontakt@pt-prettner.at</p>
+                    <p className="text-gray-600"> praxis@psychotherapie-prettner.at</p>
                   </div>
                 </div>
               </CardContent>

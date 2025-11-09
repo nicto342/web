@@ -15,7 +15,7 @@ export default function LeistungenPage() {
     {
       title: "Therapeutisches Erstgespräch",
       duration: "50 Min.",
-      price: "70",
+      price: "75",
       description: "Unverbindliches Kennenlerngespräch und erste Einschätzung.",
       features: [], // No specific features listed in the new text
       popular: false,
@@ -23,7 +23,7 @@ export default function LeistungenPage() {
     {
       title: "Therapeutisches Einzelgespräch",
       duration: "50 Min.",
-      price: "70",
+      price: "95",
       description: "Individuelle psychotherapeutische Behandlung in Einzelsitzungen.",
       features: [],
       popular: true, // Marking as popular as it's a core service
@@ -31,7 +31,7 @@ export default function LeistungenPage() {
     {
       title: "Biofeedback & Neurofeedback",
       duration: "50 Min.",
-      price: "70",
+      price: "95",
       description: "Lernen Sie, unbewusste Körperfunktionen bewusst wahrzunehmen und zu kontrollieren.",
       features: [],
       popular: false,
@@ -39,7 +39,7 @@ export default function LeistungenPage() {
     {
       title: "Gesundheitscoaching",
       duration: "50 Min.",
-      price: "70",
+      price: "75",
       description: "Unterstützung zur Förderung Ihrer physischen und psychischen Gesundheit (auch online).",
       features: [],
       popular: false,
@@ -48,10 +48,20 @@ export default function LeistungenPage() {
       title: "Hörwahrnehmungstraining",
       duration: "30 Min.",
       price: "40",
-      description: "Verbesserung der auditiven Wahrnehmung (ohne Kassen-Zuschuss).",
+      description: "Verbesserung der auditiven Wahrnehmung.",
       features: [],
       popular: false,
     },
+    {
+      title: "Tinnitus-Erstuntersuchung",
+      duration: "75 Min.",
+      price: "110",
+      description: "Analyse und Therapiekonzept.",
+      features: [],
+      popular: false,
+    },
+
+
   ]
 
   const costSubsidyInfo = [

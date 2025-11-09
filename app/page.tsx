@@ -63,15 +63,15 @@ export default function HomePage() {
                 <ul className="space-y-2 mb-2">
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Meine Ausbildung und Qualifikationen</span>
+                    <span className="text-[#1c1c1e]/70">Existenzanalyse & Logotherapie</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Beruflicher Werdegang</span>
+                    <span className="text-[#1c1c1e]/70">Biofeedback & Neurofeedback</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Meine therapeutische Philosophie</span>
+                    <span className="text-[#1c1c1e]/70">Tinnitustherapie</span>
                   </li>
                 </ul>
                 <Button
@@ -95,12 +95,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* 2: Wer bin ich */}
+        {/* 2: Die Praxis */}
         <div className="py-2 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
               <div className="lg:order-2">
-                <h2 className="text-2xl font-bold text-[#1c1c1e] mb-1">Wo Sie mich finden</h2>
+                <h2 className="text-2xl font-bold text-[#1c1c1e] mb-1">Die Praxis</h2>
                 <p className="text-base text-[#1c1c1e]/80 mb-1">
                   Der Ort für Schutz, Raum & Halt - Informationen zu meiner Praxis und Kontaktmöglichkeiten
                 </p>
@@ -108,15 +108,15 @@ export default function HomePage() {
 
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Existenzanalyse & Logotherapie</span>
+                    <span className="text-[#1c1c1e]/70">Praxisadresse und Anfahrt</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Verhaltenstherapeutische Ansätze</span>
+                    <span className="text-[#1c1c1e]/70">Öffnungszeiten und Terminvereinbarung</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Gesprächspsychotherapie</span>
+                    <span className="text-[#1c1c1e]/70">Kontaktformular</span>
                   </li>
 
                 </ul>
@@ -131,7 +131,7 @@ export default function HomePage() {
               </div>
               <div className="relative lg:order-1">
                 <Image
-                    src="/images/wegweiser.jpg"
+                    src="/images/hanno-prettner-psychologe-klagenfurt-praxis.jpg"
                     alt="Therapieraum"
                     width={400}
                     height={80}
@@ -142,27 +142,27 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* 3: Wo Sie sich finden */}
+        {/* 3: Wer bin ich */}
         <div className="py-2 bg-gradient-to-br from-[#f1e0c5] to-[#cf9452]/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
               <div>
                 <h2 className="text-2xl font-bold text-[#1c1c1e] mb-1">Wer bin ich?</h2>
                 <p className="text-base text-[#1c1c1e]/80 mb-1">
-                  Lernen Sie mich schon kurz vorab anhand meines Steckbriefes kennen
+                  Lernen Sie mich schon kurz vorab anhand meines Steckbriefs kennen
                 </p>
                 <ul className="space-y-2 mb-2">
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Praxisadresse und Anfahrt</span>
+                    <span className="text-[#1c1c1e]/70">Meine Ausbildung und Qualifikationen</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Öffnungszeiten und Terminvereinbarung</span>
+                    <span className="text-[#1c1c1e]/70">Beruflicher Werdegang</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Kontaktformular</span>
+                    <span className="text-[#1c1c1e]/70">Meine therapeutische Philosophie</span>
                   </li>
                 </ul>
                 <Button
@@ -206,7 +206,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Tinnitus-Hörwahrnehmungstraining Audiva & Entspannungstraining</span>
+                    <span className="text-[#1c1c1e]/70">Tinnitus-Hörwahrnehmungstraining & Entspannungstraining</span>
                   </li>
                 </ul>
                 <Button

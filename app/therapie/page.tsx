@@ -1,4 +1,4 @@
-import { Brain, Users, Heart, Lightbulb, Shield, Clock, Accessibility } from "lucide-react"
+import {Brain, Users, Heart, Lightbulb, Shield, Clock, Accessibility, Ear} from "lucide-react"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -11,6 +11,19 @@ export const metadata: Metadata = {
 export default function TherapiePage() {
   const therapyMethods = [
     {
+      icon: Ear,
+      title: "Tinnitus - Hörwahrnehmungstherapie",
+      description:
+          "Tinnitus kann das Leben stark beeinträchtigen – doch es gibt Wege, wieder Ruhe und Lebensqualität zu finden. In meiner Praxis steht am Beginn jeder Therapie eine umfassende Anamnese, um mögliche Ursachen und die individuelle Wahrnehmung des Ohrgeräusches zu erfassen.",
+      details: [
+        "Wissenschaftlich fundierte Therapiemethoden",
+        "Ganzheitlicher Therapieansatz",
+        "Strategien zur Entspannung",
+        "Gelassenheit trotz Ohrgeräusch",
+        "Einfühlsame verstehende phänomenologische Vorgehensweise",
+      ],
+    },
+      {
       icon: Brain,
       title: "Existenzanalyse & Logotherapie",
       description:
@@ -41,11 +54,11 @@ export default function TherapiePage() {
       icon: Users,
       title: "Hörwahrnehmungstraining - Audiva",
       description:
-        "Der Hörwahrnehmungstrainer Audiva ist ein Gerät, das dabei hilft, besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
+        "Das Hörwahrnehmungstrainig hilft dabei besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
       details: [
         "Speziell für Tinnitus-Therapie entwickelt",
         "Akustische Stimulation des Gehirns",
-        "Konzentration auf angenehme Klänge",
+        "Konzentration auf angenehme Klänge, mittels medizinischer Kopfhörer",
         "Stressreduktion durch beruhigende Wirkung",
       ],
     },
@@ -53,7 +66,7 @@ export default function TherapiePage() {
       icon: Lightbulb,
       title: "Gesundheitscoaching",
       description:
-        "Als diplomierter Gesundheits- & Sportcoach unterstütze ich Menschen dabei, ihre physische und psychische Gesundheit zu fördern und das allgemeine Wohlbefinden zu verbessern.",
+        "Als diplomierter Gesundheits- & Sportcoach berate ich Menschen dabei, ihre physische und psychische Gesundheit zu fördern und das allgemeine Wohlbefinden zu verbessern.",
       details: [
         "Entwicklung gesunder Gewohnheiten",
         "Besserer Umgang mit Stress",
@@ -75,7 +88,7 @@ export default function TherapiePage() {
       icon: Clock,
       title: "Deine Zeit - Meine Zeit - Unsere Zeit",
       description:
-        "Deine Zeit Meine Zeit Unsere Zeit. Jedem kann einmal etwas unerwartet dazwischen kommen, aus gegenseitiger Rücksichtnahme bitte ich Sie darum, Absagen bis 24 Stunden vor dem Termin zu tätigen, da ich diesen ansonsten in Rechnung stellen muss. Ein verspätetes Erscheinen zum Termin verkürzt die Therapieeinheit.",
+        "Jedem kann einmal etwas unerwartet dazwischen kommen, aus gegenseitiger Rücksichtnahme bitte ich Sie darum, Absagen bis 24 Stunden vor dem Termin zu tätigen, da ich diesen ansonsten in Rechnung stellen muss. Ein verspätetes Erscheinen zum Termin verkürzt die Therapieeinheit.",
     },
     {
       icon: Accessibility,
@@ -96,7 +109,7 @@ export default function TherapiePage() {
 
           {/* Einleitungstext */}
           <div className="bg-[#f1e0c5] rounded-lg p-8 mb-12 shadow-lg">
-            <p className="text-lg text-[#1c1c1e] leading-relaxed text-left">
+            <p className=" text-[#1c1c1e] leading-relaxed text-left">
               Ein Problem (griech. „to problema") ist etwas, das einem das Leben vor die Füße wirft und das Gehen
               behindert. Unabhängig von Alter, Geschlecht oder sozialer Herkunft, eignet sich Psychotherapie überall
               dort, wo man am Lebensvollzug gehindert wird oder bereits prophylaktisch an sich arbeiten möchte. Dort, wo
@@ -118,6 +131,13 @@ export default function TherapiePage() {
               <p className="text-[#1c1c1e] mb-6 leading-relaxed">{method.description}</p>
 
               {/* Spezielle Behandlung für Existenzanalyse */}
+              {method.title === "Tinnitus - Hörwahrnehmungstherapie" && (
+                  <div className= "mb-6">
+                    <p className="text-[#1c1c1e] mb-4 leading-relaxed">
+                      Auf dieser Basis entwickeln wir gemeinsam ein maßgeschneidertes Therapiekonzept. Ziel ist es, nicht nur die Wahrnehmung des Tinnitus zu verändern, sondern auch zu lernen, trotz des Geräusches wieder ein erfülltes und sinnvolles Leben zu führen.
+                      Darüber hinaus hilft Ihnen ein speziell dafür entwickeltes Gerät, besser mit Geräuschen umzugehen, indem die auditive Wahrnehmung verbessert und das Hören trainiert wird."</p>
+                  </div>
+              )}
               {method.title === "Existenzanalyse & Logotherapie" && (
                 <div className="mb-6">
                   <p className="text-[#1c1c1e] mb-4 leading-relaxed">

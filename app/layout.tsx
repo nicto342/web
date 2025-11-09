@@ -6,17 +6,17 @@ import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: {
-    default: "Therapiepraxis Mag. Hanno Prettner - Psychotherapie in Klagenfurt", // Aktualisiert
+    default: "Therapiepraxis Mag. Hanno Prettner - Psychotherapie in Klagenfurt",
     template: "%s | Therapiepraxis Mag. Hanno Prettner",
   },
   description:
     "Professionelle psychotherapeutische Betreuung in Klagenfurt. Existenzanalyse, Logotherapie, Biofeedback und mehr. Termine nach Vereinbarung.", // Aktualisiert
-  keywords: ["Therapie", "Psychotherapie", "Klagenfurt", "Existenzanalyse", "Biofeedback"], // Aktualisiert
+  keywords: ["Therapie", "Psychotherapie", "Klagenfurt", "Existenzanalyse", "Biofeedback"],
   authors: [{ name: "Mag. Hanno Prettner" }],
   icons: {
-    icon: '/logo.svg',
-    shortcut: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   openGraph: {
     type: "website",

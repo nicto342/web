@@ -24,7 +24,7 @@ export default function AgbPage() {
                 Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Leistungen, die von Mag. Hanno Prettner,
                 Psychotherapeut in Ausbildung unter Supervision, Alter Platz 16, 9020 Klagenfurt (im Folgenden
                 "Therapeut" genannt), im Rahmen seiner psychotherapeutischen Praxis erbracht werden. Mit der
-                Inanspruchnahme der Leistungen erklärt sich der Klient mit diesen AGB einverstanden.
+                Inanspruchnahme der Leistungen erklärt sich der Patient mit diesen AGB einverstanden.
               </p>
             </CardContent>
           </Card>
@@ -35,9 +35,9 @@ export default function AgbPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-gray-700 text-sm">
-                Termine werden nach individueller Vereinbarung getroffen. Im Falle einer Verhinderung ist der Klient
+                Termine werden nach individueller Vereinbarung getroffen. Im Falle einer Verhinderung ist der Patient
                 verpflichtet, den vereinbarten Termin mindestens 24 Stunden im Voraus abzusagen. Erfolgt die Absage
-                nicht fristgerecht oder erscheint der Klient nicht zum Termin, wird das Honorar für die versäumte
+                nicht fristgerecht oder erscheint der Patient nicht zum Termin, wird das Honorar für die versäumte
                 Sitzung in voller Höhe in Rechnung gestellt.
               </p>
             </CardContent>
@@ -64,7 +64,7 @@ export default function AgbPage() {
               <p className="text-gray-700 text-sm">
                 Der Therapeut unterliegt der gesetzlichen Schweigepflicht gemäß Psychotherapiegesetz. Alle im Rahmen der
                 Therapie besprochenen Inhalte werden streng vertraulich behandelt und nicht an Dritte weitergegeben, es
-                sei denn, der Klient entbindet den Therapeuten ausdrücklich von der Schweigepflicht oder es besteht eine
+                sei denn, der Patient entbindet den Therapeuten ausdrücklich von der Schweigepflicht oder es besteht eine
                 gesetzliche Offenbarungspflicht (z.B. bei akuter Eigen- oder Fremdgefährdung).
               </p>
             </CardContent>
@@ -76,7 +76,7 @@ export default function AgbPage() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-sm">
-                Die psychotherapeutische Behandlung ist eine eigenverantwortliche Leistung des Klienten. Der Therapeut
+                Die psychotherapeutische Behandlung ist eine eigenverantwortliche Leistung des Patienten. Der Therapeut
                 übernimmt keine Haftung für Schäden, die durch unsachgemäße Anwendung der Therapieinhalte oder durch
                 Nichtbeachtung von Anweisungen entstehen.
               </p>

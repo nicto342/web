@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-[#00674f]" />
-                <span className="text-gray-400">kontakt@pt-prettner.at</span>
+                <span className="text-gray-400"> praxis@psychotherapie-prettner.at</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-[#00674f] mt-1" />

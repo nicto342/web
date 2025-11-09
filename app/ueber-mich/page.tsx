@@ -13,6 +13,7 @@ export default function UeberMichPage() {
     "Fit im Beruf",
     "Klinikum Klagenfurt Kabeg – Psychiatrie",
     "Privatkrankenhaus Humanomed Maria Hilf",
+    "ASKÖ - Landesverband Kärnten",
   ]
 
   return (
@@ -29,19 +30,19 @@ export default function UeberMichPage() {
               1987 wurde ich in Klagenfurt am Wörthersee / Kärnten geboren, was ich heute auch meinen Wohn- und
               Arbeitssitz nennen darf. 2014 absolvierte ich meinen ABWL-Abschluss mit dem Schwerpunkt Marketing und
               Internationalem Management und der Spezialisierung auf Konsumentenverhalten an der Alpen Adria Universität
-              Klagenfurt. Zeitgleich zu diesem Studium und der Anstellung als Medienmanager bei einer Marketingagentur
+              Klagenfurt. Zeitgleich zu diesem Studium und der Anstellung als Medienmanager bei diversen Marketingagenturen
               erhielt ich mein Sport-Diplom und organisierte im Anschluss daran für 13 Jahre das betriebliche und
               schulische Gesundheitsmanagement in Kärnten für den ASKÖ-Landesverband.
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="relative">
+            <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
               <Image
-                src="/images/hanno-prettner-psychologe-werbinich.jpeg"
-                alt="Mag. Hanno Prettner"
-                width={500}
-                height={350}
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                  src="/images/hanno-prettner-psychologe-werbinich.jpeg"
+                  alt="Mag. Hanno Prettner"
+                  width={500}
+                  height={350}
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
             </div>
           </div>
@@ -65,7 +66,9 @@ export default function UeberMichPage() {
                 Seit 2023 bin ich als Biofeedback & Neurofeedbacktherapeut in der psychologischen Gemeinschaftspraxis
                 „Fit im Beruf“ tätig. Meine Patienten erlernen hierbei binnen kürzester Zeit Werkzeuge der
                 Selbstregulation. In den vertiefenden Einzelgesprächen werden dann die zu Grunde liegenden Probleme
-                gemeinsam bearbeitet.
+                gemeinsam bearbeitet. Einen Schwerpunkt meiner beruflichen Tätigkeit bildet die Begleitung von Menschen mit
+                Tinnitus. Durch individuell abgestimmte Ansätze konnte ich bereits vielen Betroffenen spürbare Erleichterung
+                und neue Lebensqualität ermöglichen.
               </p>
               <p className="text-lg text-[#1c1c1e] leading-relaxed">
                 Im März 2026 durfte ich neben meiner Anstellung auch meiner Berufung als selbstständiger Psychotherapeut
@@ -78,7 +81,7 @@ export default function UeberMichPage() {
 
         {/* Berufserfahrungen */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#1c1c1e] mb-8 text-center">Berufserfahrungen</h2>
+          <h2 className="text-3xl font-bold text-[#1c1c1e] mb-8 text-center">psychosoziale Berufserfahrungen</h2>
           <Card className="bg-[#f1e0c5] shadow-lg">
             {" "}
             {/* Changed card background to beige */}

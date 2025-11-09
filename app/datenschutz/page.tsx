@@ -63,7 +63,7 @@ export default function DatenschutzPage() {
                   <br />
                   Telefon: +43 660 19 87 27 5
                   <br />
-                  E-Mail: kontakt@pt-prettner.at
+                  E-Mail: praxis@psychotherapie-prettner.at
                 </p>
               </div>
             </CardContent>
@@ -120,7 +120,7 @@ export default function DatenschutzPage() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-sm">
-                Als Psychologische Psychotherapeutin unterliege ich der besonderen Schweigepflicht nach § 203 StGB. Alle
+                Als Psychotherapeut in Ausbildung unter Supervision unterliege ich der besonderen Schweigepflicht nach BGBl. Nr. 361/1990 STO 151. Alle
                 Informationen aus therapeutischen Gesprächen werden streng vertraulich behandelt und nicht an Dritte
                 weitergegeben. Die Dokumentation erfolgt entsprechend den berufsrechtlichen Vorgaben und wird sicher
                 aufbewahrt.

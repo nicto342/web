@@ -21,11 +21,11 @@ export default function ImpressumPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h3 className="font-semibold text-gray-900">Praxisinhaberin:</h3>
+                <h3 className="font-semibold text-gray-900">Praxisinhaber:</h3>
                 <p className="text-gray-700">
                   Mag. Hanno Prettner
                   <br />
-                  Psychotherapeut
+                  Psychotherapeut in Ausbildung unter Supervision
                 </p>
               </div>
 
@@ -45,7 +45,7 @@ export default function ImpressumPage() {
                 <p className="text-gray-700">
                   Telefon: +43 660 19 87 27 5
                   <br />
-                  E-Mail: kontakt@pt-prettner.at
+                  E-Mail: praxis@psychotherapie-prettner.at
                 </p>
               </div>
             </CardContent>
@@ -62,7 +62,7 @@ export default function ImpressumPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-gray-900">Zuständige Kammer:</h3>
+                <h3 className="font-semibold text-gray-900">Zuständige Aufsichtsbehörde:</h3>
                 <p className="text-gray-700">
                   Bundesministerium für Soziales, Gesundheit, Pflege und Konsumentenschutz (BMSGPK)
                 </p>
@@ -77,7 +77,7 @@ export default function ImpressumPage() {
 
               <div>
                 <h3 className="font-semibold text-gray-900">Berufsrechtliche Regelungen:</h3>
-                <p className="text-gray-700">Psychotherapiegesetz (PsychotherapieG)</p>
+                <p className="text-gray-700">Psychotherapiegesetz (PThG 2024)</p>
               </div>
             </CardContent>
           </Card>
@@ -106,7 +106,7 @@ export default function ImpressumPage() {
               <div>
                 <h3 className="font-semibold text-gray-900">Urheberrecht:</h3>
                 <p className="text-gray-700 text-sm">
-                  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+                  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österr.
                   Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
                   Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw.
                   Erstellers.
