@@ -43,9 +43,9 @@ export default function ImpressumPage() {
               <div>
                 <h3 className="font-semibold text-gray-900">Kontakt:</h3>
                 <p className="text-gray-700">
-                  Telefon: +43 660 19 87 27 5
+                  Telefon: <a href="tel:+436601987275" className="text-gray-700 hover:text-[#00674f] transition-colors cursor-pointer">+43 660 19 87 27 5</a>
                   <br />
-                  E-Mail: praxis@psychotherapie-prettner.at
+                  E-Mail: <a href="mailto:praxis@psychotherapie-prettner.at" className="text-gray-700 hover:text-[#00674f] transition-colors cursor-pointer">praxis@psychotherapie-prettner.at</a>
                 </p>
               </div>
             </CardContent>

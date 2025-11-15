@@ -52,7 +52,7 @@ export default function TherapiePage() {
     },
     {
       icon: Users,
-      title: "Hörwahrnehmungstraining - Audiva",
+      title: "Hörwahrnehmungstraining",
       description:
         "Das Hörwahrnehmungstrainig hilft dabei besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
       details: [

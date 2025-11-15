@@ -27,11 +27,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-[#00674f]" />
-                <span className="text-gray-400">+43 660 19 87 27 5</span>
+                <a href="tel:+436601987275" className="text-gray-400 hover:text-[#00674f] transition-colors">
+                  +43 660 19 87 27 5
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-[#00674f]" />
-                <span className="text-gray-400"> praxis@psychotherapie-prettner.at</span>
+                <a href="mailto:praxis@psychotherapie-prettner.at" className="text-gray-400 hover:text-[#00674f] transition-colors">
+                  praxis@psychotherapie-prettner.at
+                </a>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-[#00674f] mt-1" />

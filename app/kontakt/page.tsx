@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Loader2 } from "lucide-react"
 import Image from "next/image" // Import Image component again
 
 export default function KontaktPage() {
@@ -18,12 +18,54 @@ export default function KontaktPage() {
     phone: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null
+    message: string
+  }>({ type: null, message: "" })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Hier würde die Formular-Logik implementiert werden
-    console.log("Form submitted:", formData)
-    alert("Vielen Dank für Ihre Nachricht! Ich melde mich zeitnah bei Ihnen.")
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: "" })
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: "Vielen Dank für Ihre Nachricht! Ich melde mich zeitnah bei Ihnen.",
+        })
+        // Formular zurücksetzen
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        })
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+        })
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -111,8 +153,26 @@ export default function KontaktPage() {
                     placeholder="Beschreiben Sie kurz Ihr Anliegen..."
                   />
                 </div>
-                <Button type="submit" className="w-full">
-                  Nachricht senden
+                {submitStatus.type && (
+                  <div
+                    className={`p-4 rounded-lg ${
+                      submitStatus.type === "success"
+                        ? "bg-green-50 text-green-800 border border-green-200"
+                        : "bg-red-50 text-red-800 border border-red-200"
+                    }`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Wird gesendet...
+                    </>
+                  ) : (
+                    "Nachricht senden"
+                  )}
                 </Button>
               </form>
             </CardContent>
@@ -140,14 +200,24 @@ export default function KontaktPage() {
                   <Phone className="h-5 w-5 text-[#00674f]" />
                   <div>
                     <p className="font-medium">Telefon</p>
-                    <p className="text-gray-600">+43 660 19 87 27 5</p>
+                    <a 
+                      href="tel:+436601987275" 
+                      className="text-gray-600 hover:text-[#00674f] transition-colors cursor-pointer"
+                    >
+                      +43 660 19 87 27 5
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-[#00674f]" />
                   <div>
                     <p className="font-medium">E-Mail</p>
-                    <p className="text-gray-600"> praxis@psychotherapie-prettner.at</p>
+                    <a 
+                      href="mailto:praxis@psychotherapie-prettner.at" 
+                      className="text-gray-600 hover:text-[#00674f] transition-colors cursor-pointer"
+                    >
+                      praxis@psychotherapie-prettner.at
+                    </a>
                   </div>
                 </div>
               </CardContent>
