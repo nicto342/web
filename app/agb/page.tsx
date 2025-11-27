@@ -22,7 +22,7 @@ export default function AgbPage() {
             <CardContent>
               <p className="text-gray-700 text-sm">
                 Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Leistungen, die von Mag. Hanno Prettner,
-                Psychotherapeut in Ausbildung unter Supervision, Alter Platz 16, 9020 Klagenfurt (im Folgenden
+                Psychotherapeut in Fachausbildung unter Lehrsupervision, Alter Platz 16, 9020 Klagenfurt (im Folgenden
                 "Therapeut" genannt), im Rahmen seiner psychotherapeutischen Praxis erbracht werden. Mit der
                 Inanspruchnahme der Leistungen erklärt sich der Patient mit diesen AGB einverstanden.
               </p>

@@ -25,7 +25,7 @@ export default function UeberMichPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h1 className="text-4xl font-bold text-[#1c1c1e] mb-6">Mag. Hanno Prettner</h1>
-            <p className="text-xl text-[#1c1c1e]/80 mb-6">Psychotherapeut in Ausbildung unter Supervision</p>
+            <p className="text-xl text-[#1c1c1e]/80 mb-6">Psychotherapeut in Fachausbildung unter Lehrsupervision</p>
             <p className="text-lg text-[#1c1c1e] leading-relaxed">
               1987 wurde ich in Klagenfurt am Wörthersee / Kärnten geboren, was ich heute auch meinen Wohn- und
               Arbeitssitz nennen darf. 2014 absolvierte ich meinen ABWL-Abschluss mit dem Schwerpunkt Marketing und

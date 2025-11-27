@@ -27,7 +27,7 @@ export default function Header() {
               <img src="/logo.svg" alt="Mag. Hanno Prettner Logo" className="h-12 w-12" />
               <div>
                 <div className="text-xl font-bold text-[#1c1c1e]">Mag. Hanno Prettner</div>
-                <div className="text-sm text-[#00674f]">Psychotherapeut in Ausbildung unter Supervision</div>
+                <div className="text-sm text-[#00674f]">Psychotherapeut in Fachausbildung unter Lehrsupervision</div>
               </div>
             </Link>
           </div>

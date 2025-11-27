@@ -25,7 +25,7 @@ export default function ImpressumPage() {
                 <p className="text-gray-700">
                   Mag. Hanno Prettner
                   <br />
-                  Psychotherapeut in Ausbildung unter Supervision
+                  Psychotherapeut in Fachausbildung unter Lehrsupervision
                 </p>
               </div>
 

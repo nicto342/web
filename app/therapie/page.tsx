@@ -54,12 +54,13 @@ export default function TherapiePage() {
       icon: Users,
       title: "Hörwahrnehmungstraining",
       description:
-        "Das Hörwahrnehmungstrainig hilft dabei besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
+        "Das Hörwahrnehmungstrainig hilft dabei, besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
       details: [
         "Speziell für Tinnitus-Therapie entwickelt",
         "Akustische Stimulation des Gehirns",
         "Konzentration auf angenehme Klänge, mittels medizinischer Kopfhörer",
         "Stressreduktion durch beruhigende Wirkung",
+        "Aufbau neuronaler Netzwerke",
       ],
     },
     {
@@ -135,7 +136,7 @@ export default function TherapiePage() {
                   <div className= "mb-6">
                     <p className="text-[#1c1c1e] mb-4 leading-relaxed">
                       Auf dieser Basis entwickeln wir gemeinsam ein maßgeschneidertes Therapiekonzept. Ziel ist es, nicht nur die Wahrnehmung des Tinnitus zu verändern, sondern auch zu lernen, trotz des Geräusches wieder ein erfülltes und sinnvolles Leben zu führen.
-                      Darüber hinaus hilft Ihnen ein speziell dafür entwickeltes Gerät, besser mit Geräuschen umzugehen, indem die auditive Wahrnehmung verbessert und das Hören trainiert wird."</p>
+                      Darüber hinaus hilft Ihnen ein speziell dafür entwickeltes Gerät, besser mit Geräuschen umzugehen, indem die auditive Wahrnehmung verbessert und das Hören trainiert wird.</p>
                   </div>
               )}
               {method.title === "Existenzanalyse & Logotherapie" && (
@@ -153,15 +154,20 @@ export default function TherapiePage() {
                   </p>
                   <div className="bg-white p-4 rounded-lg mb-4 border-l-4 border-[#00674f]">
                     <h4 className="font-semibold text-[#00674f] mb-2">Die 4 Grundmotivationen des Lebens:</h4>
-                    {method.questions?.map((question, idx) => (
-                      <p key={idx} className="text-[#1c1c1e] mb-1">
-                        • {question}
-                      </p>
-                    ))}
+                    {method.questions?.map((question, idx) => {
+                      const words = question.split(' ')
+                      const firstWord = words[0]
+                      const restOfQuestion = words.slice(1).join(' ')
+                      return (
+                        <p key={idx} className="text-[#1c1c1e] mb-1">
+                          • <span className="underline decoration-1 underline-offset-2">{firstWord}</span> {restOfQuestion}
+                        </p>
+                      )
+                    })}
                   </div>
                   <p className="text-[#1c1c1e] leading-relaxed">
                     Das JA zu jeder Grundmotivation zu finden, führt dann dazu, dass der Mensch von sich behaupten kann:
-                    JA, ich will (so) leben! Die Vorgehensweise ist hierbei einfühlsam und phänomenologisch. Es geht
+                    JA, ich <span className="underline decoration-1 underline-offset-2">will</span> (so) leben! Die Vorgehensweise ist hierbei einfühlsam und phänomenologisch. Es geht
                     darum, den Menschen in seiner Einmaligkeit und Einzigartigkeit zu verstehen und seine Freiheit zu
                     wecken, damit das Leben wieder mit Hingabe selbstbestimmt gelebt werden will.
                   </p>
