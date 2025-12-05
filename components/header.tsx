@@ -19,7 +19,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="bg-[#f1e0c5] shadow-sm border-b border-[#cf9452]/20">
+      <header className="sticky top-0 z-50 bg-[#f1e0c5] shadow-sm border-b border-[#cf9452]/20">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4">
           <div className="flex items-center">
