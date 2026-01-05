@@ -37,13 +37,19 @@ export default function UeberMichPage() {
           </div>
           <div className="flex justify-center">
             <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
-              <Image
-                  src="/images/hanno-prettner-psychologe-werbinich.jpeg"
-                  alt="Mag. Hanno Prettner"
-                  width={500}
-                  height={350}
-                  className="rounded-lg shadow-lg w-full h-auto object-cover"
-              />
+              {/* Picture Frame Effect */}
+              <div className="p-4 bg-gradient-to-br from-[#f1e0c5] to-[#e8d4b8] shadow-2xl border-8 border-[#8b6f47] rounded-sm">
+                {/* Inner mat/passepartout */}
+                <div className="p-3 bg-white border-2 border-[#d4c4a8]">
+                  <Image
+                      src="/images/hanno-prettner-psychologe-uebermich.jpeg"
+                      alt="Mag. Hanno Prettner"
+                      width={500}
+                      height={350}
+                      className="w-full h-auto object-cover shadow-inner"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

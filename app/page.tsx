@@ -175,7 +175,7 @@ export default function HomePage() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/hanno-prettner-psychologe-uebermich.jpeg"
+                  src="/images/hanno-prettner-psychologe-ubermich-home.jpg"
                   alt="Praxis"
                   width={400}
                   height={80}

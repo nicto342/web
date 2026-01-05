@@ -58,7 +58,7 @@ export default function ImpressumPage() {
             <CardContent className="space-y-4">
               <div>
                 <h3 className="font-semibold text-gray-900">Berufsbezeichnung:</h3>
-                <p className="text-gray-700">Psychotherapeut</p>
+                <p className="text-gray-700">Psychotherapeut in Fachausbildung unter Lehrsupervision</p>
               </div>
 
               <div>

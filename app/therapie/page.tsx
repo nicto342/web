@@ -2,6 +2,7 @@ import {Brain, Users, Heart, Lightbulb, Shield, Clock, Accessibility, Ear} from 
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Therapiemethoden",
@@ -18,9 +19,12 @@ export default function TherapiePage() {
       details: [
         "Wissenschaftlich fundierte Therapiemethoden",
         "Ganzheitlicher Therapieansatz",
-        "Strategien zur Entspannung",
         "Gelassenheit trotz Ohrgeräusch",
-        "Einfühlsame verstehende phänomenologische Vorgehensweise",
+        "Akustische Stimulation des Gehirns",
+        "Konzentration auf angenehme Klänge, mittels medizinischer Kopfhörer",
+        "Stressreduktion durch beruhigende Wirkung",
+        "Aufbau neuronaler Netzwerke",
+
       ],
     },
       {
@@ -48,19 +52,6 @@ export default function TherapiePage() {
         "Einsatz bei Stress, Angst und Depression",
         "Behandlung chronischer Schmerzen und Migräne",
         "Wahrnehmung und Training von Bewusstseinszuständen",
-      ],
-    },
-    {
-      icon: Users,
-      title: "Hörwahrnehmungstraining",
-      description:
-        "Das Hörwahrnehmungstrainig hilft dabei, besser mit Geräuschen umzugehen. Es wird die auditive Wahrnehmung verbessert und das Hören trainiert.",
-      details: [
-        "Speziell für Tinnitus-Therapie entwickelt",
-        "Akustische Stimulation des Gehirns",
-        "Konzentration auf angenehme Klänge, mittels medizinischer Kopfhörer",
-        "Stressreduktion durch beruhigende Wirkung",
-        "Aufbau neuronaler Netzwerke",
       ],
     },
     {
@@ -174,14 +165,71 @@ export default function TherapiePage() {
                 </div>
               )}
 
-              <ul className="space-y-2">
-                {method.details.map((detail, idx) => (
-                  <li key={idx} className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]">{detail}</span>
-                  </li>
-                ))}
-              </ul>
+              {/* Tinnitus: Liste und Bild nebeneinander auf Desktop/Tablet, untereinander auf Mobile */}
+              {method.title === "Tinnitus - Hörwahrnehmungstherapie" ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-stretch">
+                  <ul className="space-y-2 md:h-full flex flex-col">
+                    {method.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-[#1c1c1e]">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex justify-center md:justify-end md:h-full">
+                    <div className="relative w-full max-w-[200px] md:max-w-xs md:h-full">
+                      <Image
+                        src="/images/hanno-prettner-psychologe-Tinnitus.jpg"
+                        alt="Tinnitus - Hörwahrnehmungstherapie"
+                        width={400}
+                        height={600}
+                        className="rounded-lg shadow-lg w-full md:h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <ul className="space-y-2 mb-6">
+                    {method.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-[#1c1c1e]">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Foto Existenzanalyse */}
+                  {method.title === "Existenzanalyse & Logotherapie" && (
+                    <div className="mt-6 flex justify-center">
+                      <div className="relative w-full max-w-md">
+                        <Image
+                          src="/images/hanno-prettner-psychologe-Existenzanalyse.jpg"
+                          alt="Existenzanalyse & Logotherapie"
+                          width={500}
+                          height={350}
+                          className="rounded-lg shadow-lg w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Foto Platz für Biofeedback */}
+                  {method.title === "Biofeedback & Neurofeedback" && (
+                    <div className="mt-6 flex justify-center">
+                      <div className="relative w-full max-w-md">
+                        <Image
+                          src="/images/hanno-prettner-psychologe-Biofeedback.jpg"
+                          alt="Biofeedback & Neurofeedback"
+                          width={500}
+                          height={350}
+                          className="rounded-lg shadow-lg w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           ))}
         </div>

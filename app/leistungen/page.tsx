@@ -15,7 +15,7 @@ export default function LeistungenPage() {
     {
       title: "Therapeutisches Erstgespräch",
       duration: "50 Min.",
-      price: "75",
+      price: "65",
       description: "Unverbindliches Kennenlerngespräch und erste Einschätzung.",
       features: [], // No specific features listed in the new text
       popular: false,
@@ -23,15 +23,15 @@ export default function LeistungenPage() {
     {
       title: "Therapeutisches Einzelgespräch",
       duration: "50 Min.",
-      price: "95",
+      price: "85",
       description: "Individuelle psychotherapeutische Behandlung in Einzelsitzungen.",
       features: [],
-      popular: true, // Marking as popular as it's a core service
+      popular: true,
     },
     {
       title: "Biofeedback & Neurofeedback",
       duration: "50 Min.",
-      price: "95",
+      price: "85",
       description: "Lernen Sie, unbewusste Körperfunktionen bewusst wahrzunehmen und zu kontrollieren.",
       features: [],
       popular: false,
@@ -39,16 +39,8 @@ export default function LeistungenPage() {
     {
       title: "Gesundheitscoaching",
       duration: "50 Min.",
-      price: "75",
+      price: "85",
       description: "Unterstützung zur Förderung Ihrer physischen und psychischen Gesundheit (auch online).",
-      features: [],
-      popular: false,
-    },
-    {
-      title: "Hörwahrnehmungstraining",
-      duration: "30 Min.",
-      price: "40",
-      description: "Verbesserung der auditiven Wahrnehmung.",
       features: [],
       popular: false,
     },
@@ -60,7 +52,22 @@ export default function LeistungenPage() {
       features: [],
       popular: false,
     },
-
+    {
+      title: "Tinnitus-Behandlung & Beratung",
+      duration: "50 Min.",
+      price: "85",
+      description: "Biofeedback, Achtsamkeits- & Entspannungstraining, Beratung",
+      features: [],
+      popular: false,
+    },
+    {
+      title: "Hörwahrnehmungstraining",
+      duration: "30 Min.",
+      price: "40",
+      description: "Verbesserung der auditiven Wahrnehmung.",
+      features: [],
+      popular: false,
+    },
 
   ]
 
