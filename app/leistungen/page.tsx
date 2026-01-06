@@ -13,15 +13,15 @@ export const metadata: Metadata = {
 export default function LeistungenPage() {
   const services = [
     {
-      title: "Therapeutisches Erstgespräch",
+      title: "Psychotherapeutisches Erstgespräch",
       duration: "50 Min.",
       price: "65",
       description: "Unverbindliches Kennenlerngespräch und erste Einschätzung.",
-      features: [], // No specific features listed in the new text
+      features: [],
       popular: false,
     },
     {
-      title: "Therapeutisches Einzelgespräch",
+      title: "Psychotherapeutisches Einzelgespräch",
       duration: "50 Min.",
       price: "85",
       description: "Individuelle psychotherapeutische Behandlung in Einzelsitzungen.",
@@ -45,7 +45,7 @@ export default function LeistungenPage() {
       popular: false,
     },
     {
-      title: "Tinnitus-Erstuntersuchung",
+      title: "Tinnitus Erstuntersuchung",
       duration: "75 Min.",
       price: "110",
       description: "Analyse und Therapiekonzept.",
@@ -53,7 +53,7 @@ export default function LeistungenPage() {
       popular: false,
     },
     {
-      title: "Tinnitus-Behandlung & Beratung",
+      title: "Tinnitus Behandlung",
       duration: "50 Min.",
       price: "85",
       description: "Biofeedback, Achtsamkeits- & Entspannungstraining, Beratung",
@@ -116,9 +116,15 @@ export default function LeistungenPage() {
                     <Clock className="h-4 w-4 text-[#00674f]" />
                     <span className="text-sm text-[#1c1c1e]">{service.duration}</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Euro className="h-5 w-5 text-[#00674f]" />
-                    <span className="text-2xl font-bold text-[#00674f]">{service.price}</span>
+                  <div className="flex flex-col items-end">
+                    <div className="flex items-center space-x-1">
+                      <Euro className="h-5 w-5 text-[#00674f]" />
+                      <span className="text-2xl font-bold text-[#00674f]">{service.price}</span>
+                    </div>
+                    {service.title !== "Psychotherapeutisches Erstgespräch" && 
+                     service.title !== "Psychotherapeutisches Einzelgespräch" && (
+                      <span className="text-xs text-[#1c1c1e]/70">inkl. USt</span>
+                    )}
                   </div>
                 </div>
                 <p className="text-[#1c1c1e]">{service.description}</p>
