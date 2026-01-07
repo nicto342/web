@@ -15,7 +15,7 @@ export default function LeistungenPage() {
     {
       title: "Psychotherapeutisches Erstgespräch",
       duration: "50 Min.",
-      price: "65",
+      price: "65,-",
       description: "Unverbindliches Kennenlerngespräch und erste Einschätzung.",
       features: [],
       popular: false,
@@ -23,7 +23,7 @@ export default function LeistungenPage() {
     {
       title: "Psychotherapeutisches Einzelgespräch",
       duration: "50 Min.",
-      price: "85",
+      price: "85,-",
       description: "Individuelle psychotherapeutische Behandlung in Einzelsitzungen.",
       features: [],
       popular: true,
@@ -31,7 +31,7 @@ export default function LeistungenPage() {
     {
       title: "Biofeedback & Neurofeedback",
       duration: "50 Min.",
-      price: "85",
+      price: "85,-",
       description: "Lernen Sie, unbewusste Körperfunktionen bewusst wahrzunehmen und zu kontrollieren.",
       features: [],
       popular: false,
@@ -39,7 +39,7 @@ export default function LeistungenPage() {
     {
       title: "Gesundheitscoaching",
       duration: "50 Min.",
-      price: "85",
+      price: "85,-",
       description: "Unterstützung zur Förderung Ihrer physischen und psychischen Gesundheit (auch online).",
       features: [],
       popular: false,
@@ -47,7 +47,7 @@ export default function LeistungenPage() {
     {
       title: "Tinnitus Erstuntersuchung",
       duration: "75 Min.",
-      price: "110",
+      price: "110,-",
       description: "Analyse und Therapiekonzept.",
       features: [],
       popular: false,
@@ -55,7 +55,7 @@ export default function LeistungenPage() {
     {
       title: "Tinnitus Behandlung",
       duration: "50 Min.",
-      price: "85",
+      price: "85,-",
       description: "Biofeedback, Achtsamkeits- & Entspannungstraining, Beratung",
       features: [],
       popular: false,
@@ -63,7 +63,7 @@ export default function LeistungenPage() {
     {
       title: "Hörwahrnehmungstraining",
       duration: "30 Min.",
-      price: "40",
+      price: "40,-",
       description: "Verbesserung der auditiven Wahrnehmung.",
       features: [],
       popular: false,
@@ -121,8 +121,10 @@ export default function LeistungenPage() {
                       <Euro className="h-5 w-5 text-[#00674f]" />
                       <span className="text-2xl font-bold text-[#00674f]">{service.price}</span>
                     </div>
-                    {service.title !== "Psychotherapeutisches Erstgespräch" && 
-                     service.title !== "Psychotherapeutisches Einzelgespräch" && (
+                    {service.title === "Psychotherapeutisches Erstgespräch" || 
+                     service.title === "Psychotherapeutisches Einzelgespräch" ? (
+                      <span className="text-xs text-[#1c1c1e]/70">USt-befreit</span>
+                    ) : (
                       <span className="text-xs text-[#1c1c1e]/70">inkl. USt</span>
                     )}
                   </div>
@@ -132,6 +134,18 @@ export default function LeistungenPage() {
               {/* Removed features list as per new text */}
             </Card>
           ))}
+        </div>
+
+        {/* Info Box */}
+        <div className="mb-16">
+          <div className="bg-[#f1e0c5] rounded-lg p-6 border-l-4 border-[#00674f] shadow-md">
+            <p className="text-sm text-[#1c1c1e] leading-relaxed">
+              <strong className="text-[#00674f]">Hinweis:</strong> Bitte beachten Sie, dass Therapiesitzungen bei
+              Psychotherapeut:innen in Fachausbildung unter Lehrsupervision nicht von der Österreichischen
+              Gesundheitskasse (ÖGK) übernommen werden. Falls Sie bei einer anderen Krankenkasse versichert sind,
+              erkundigen Sie sich bitte direkt dort hinsichtlich einer möglichen Kostenbeteiligung.
+            </p>
+          </div>
         </div>
 
         {/* Cost Subsidy Information */}

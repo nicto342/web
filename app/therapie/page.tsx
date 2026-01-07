@@ -185,7 +185,7 @@ export default function TherapiePage() {
                         height={600}
                         className="rounded-lg shadow-lg w-full md:h-full object-cover"
                         loading="lazy"
-                        quality={85}
+                        quality={75}
                         sizes="(max-width: 768px) 200px, 300px"
                       />
                     </div>
@@ -213,7 +213,7 @@ export default function TherapiePage() {
                           height={350}
                           className="rounded-lg shadow-lg w-full h-auto object-cover"
                           loading="lazy"
-                          quality={85}
+                          quality={75}
                           sizes="(max-width: 768px) 100vw, 500px"
                         />
                       </div>
@@ -231,7 +231,7 @@ export default function TherapiePage() {
                           height={350}
                           className="rounded-lg shadow-lg w-full h-auto object-cover"
                           loading="lazy"
-                          quality={85}
+                          quality={75}
                           sizes="(max-width: 768px) 100vw, 500px"
                         />
                       </div>
