@@ -206,7 +206,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-[#00674f] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#1c1c1e]/70">Tinnitus-Hörwahrnehmungstraining & Entspannungstraining</span>
+                    <span className="text-[#1c1c1e]/70">Tinnitus Behandlung & Entspannungstraining</span>
                   </li>
                 </ul>
                 <Button

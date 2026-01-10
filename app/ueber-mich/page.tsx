@@ -63,7 +63,7 @@ export default function UeberMichPage() {
                 Psychotherapie, um vorwiegend mit einer wertschätzenden verstehenden Haltung am Menschen zu sein.
               </p>
               <p className="text-lg text-[#1c1c1e] leading-relaxed mb-4">
-                Seit 2023 bin ich als Biofeedback & Neurofeedbacktherapeut in der psychologischen Gemeinschaftspraxis
+                Seit 2023 bin ich als Biofeedback- & Neurofeedbacktherapeut in der psychologischen Gemeinschaftspraxis
                 „Fit im Beruf“ tätig. Meine Patienten erlernen hierbei binnen kürzester Zeit Werkzeuge der
                 Selbstregulation. In den vertiefenden Einzelgesprächen werden dann die zu Grunde liegenden Probleme
                 gemeinsam bearbeitet. Einen Schwerpunkt meiner beruflichen Tätigkeit bildet die Begleitung von Menschen mit
@@ -72,7 +72,7 @@ export default function UeberMichPage() {
               </p>
               <p className="text-lg text-[#1c1c1e] leading-relaxed">
                 Im März 2026 durfte ich neben meiner Anstellung auch meiner Berufung als selbstständiger Psychotherapeut
-                in Ausbildung unter Supervision der humanistischen Therapierichtung Existenzanalyse & Logotherapie in
+                in Fachausbildung unter Lehrsupervision der humanistischen Therapierichtung Existenzanalyse & Logotherapie in
                 eigener Praxis nachgehen.
               </p>
             </CardContent>

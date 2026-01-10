@@ -56,7 +56,7 @@ export default function LeistungenPage() {
       title: "Tinnitus Behandlung",
       duration: "50 Min.",
       price: "85,-",
-      description: "Biofeedback, Achtsamkeits- & Entspannungstraining, Beratung",
+      description: "Biofeedback, Achtsamkeits- & Entspannungstraining, Beratung.",
       features: [],
       popular: false,
     },

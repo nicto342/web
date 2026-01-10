@@ -36,7 +36,7 @@ export default function TherapiePage() {
         "Sinn-zentrierter Beratungs- und Behandlungsansatz",
         "Sinnfindung in schwierigsten Situationen und Lebenskrisen",
         "Neuorientierung in allen Lebenssituationen",
-        "JA, zum Lebensagen!",
+        "JA, zum Leben sagen!",
         "Einfühlsame verstehende phänomenologische Vorgehensweise",
       ],
       questions: ["Kann ich (so) leben?", "Mag ich (so) leben?", "Darf ich (so) leben?", "Soll ich (so) leben?"],
@@ -105,7 +105,7 @@ export default function TherapiePage() {
               Ein Problem (griech. „to problema") ist etwas, das einem das Leben vor die Füße wirft und das Gehen
               behindert. Unabhängig von Alter, Geschlecht oder sozialer Herkunft, eignet sich Psychotherapie überall
               dort, wo man am Lebensvollzug gehindert wird oder bereits prophylaktisch an sich arbeiten möchte. Dort, wo
-              der Mensch unfrei ist, biete ich eine Unterstützung und Hilfestellung, um ihn wieder ein gutes und
+              der Mensch unfrei ist, biete ich eine Unterstützung und Hilfestellung, um ihm wieder ein gutes und
               sinnerfülltes Leben zu ermöglichen.
             </p>
           </div>
